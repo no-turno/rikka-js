@@ -1,0 +1,21 @@
+{
+  "name": "@no-turno/rikka.js",
+  "description": "My first js framework for the same thing, multi conf apps",
+  "scripts": {
+    "start:ssr": "bun run ./.rikka/scripts/start.js",
+    "start:static": "bun run ./.rikka/scripts/vite.js",
+    "build:all": "bun run vite build --config=./.rikka/runtimes/static/vite.config.js && bun build --config=./.rikka/runtimes/ssr/bunfig.toml src/main.jsx --format=esm --outdir=dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vite": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "get-port-please": "^3.1.2"
+  },
+  "module": "index.ts",
+  "type": "module"
+}

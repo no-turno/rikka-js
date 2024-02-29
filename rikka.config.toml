@@ -1,0 +1,13 @@
+root = "/"
+
+[[router]]
+path = "public"
+type = "static"
+runtime = "vite"
+config = ".rikka/static/vite.config.js"
+
+[[router]]
+path = "routes"
+type = "ssr"
+runtime = "bun"
+config = ".rikka/ssr/bunfig.toml"

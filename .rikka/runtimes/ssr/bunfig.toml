@@ -1,0 +1,13 @@
+jsx = "react"
+preload = "./.rikka/runtimes/ssr/runners/preload.js"
+
+[define]
+"process.env.ENTRYPOINT_DIR" = "'src/routes'"
+
+[loader]
+".ts" = "ts"
+".tsx" = "tsx"
+".jsx" = "jsx"
+".wasm" = "wasm"
+".toml" = "toml"
+".json" = "json"
